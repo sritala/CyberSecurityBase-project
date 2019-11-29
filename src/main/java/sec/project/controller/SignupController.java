@@ -29,4 +29,10 @@ public class SignupController {
         signupRepository.save(new Signup(name, address, email, creditCardNumber));
         return "done";
     }
+
+    
+
+
+
+
 }
