@@ -95,3 +95,4 @@ NOTE: You might need to configure ports depending on your own OWASP ZAP proxy se
 5.	Do not store credit-card-numbers, use external service providers such as Stripe
 6.	Implement HTTPS as layer of security when handling credit-card number information
 7.	Remove unsecure way of handling listing of single subscriber (nativeQuery = true) and use spring-boot supplied JPA repository and safer methods supplied by default such as .findOne()
+# CyberSecurityBase19
