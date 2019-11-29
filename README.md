@@ -1,4 +1,4 @@
-# CyberSecurityBase-project
+# Cyber Security Base - project
 
 This is project for Cyber Security Base - MOOC course. You can find project template from here https://github.com/cybersecuritybase/cybersecuritybase-project. 
 
