@@ -30,7 +30,7 @@ Task: Visitors can send malicious push up messages for admins.
 
 ### How to avoid this: 
 
-This problem can be found from templates->list. This program uses Thymeleaf template where the vulnerability is in the code "span th:utext="${subscriber.name}">". Th:utex stands for unescaped text and should be avoided as it can cause security problems. You can avoid this by using "th:text" instead. 
+This problem can be found from templates->list. This program uses Thymeleaf template where the vulnerability is in the code "span th:utext="${subscriber.name}". Th:utex stands for unescaped text and should be avoided as it can cause security problems. You can avoid this by using "th:text" instead. 
 
 ## Issue III: Security misconfiguration
 
