@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ADMIN AREA: Subscriber <span th:text="${subscriber.name}"></span></title>
+</head>
+<body>
+
+<h1>Admins only</h1>
+<hr />
+<h2><small th:text="${date}">${now}</small><br />Subscriber with id <span th:text="${subscriber.id}"></span></h2>
+<ul>
+    <li>
+        Id: <span th:text="${subscriber.id}"></span><br />
+        Name: <span th:text="${subscriber.name}"></span><br />
+        Address: <span th:text="${subscriber.address}"></span><br />
+        Email address: <span th:text="${subscriber.email}"></span><br />
+        <hr />
+        Credit-Card Number: <span th:utext="${subscriber.creditCardNumber}"></span>
+    </li>
+</ul>
+</body>
+</html>
