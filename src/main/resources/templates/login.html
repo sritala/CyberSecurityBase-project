@@ -5,10 +5,10 @@
   <title>Sign in form</title>
 </head>
 <body>
-  <h1>Login</h1>
+  <a href="/login">Login</a>
   <h2>Admin login </h2>
  
-  <form action="#" th:action="@{/form}" method="POST">
+  <form action="#" th:action="@{/login}" method="POST">
     <h3>sign in</h3>
     <p><label class="username" for="username">Username</label>: <input type="text" name="username" id="username"/></p>
     <p><label class="password" for="password">Password</label>: <input type="password" name="password" id="password"/></p>
@@ -16,7 +16,7 @@
 </form>
 
 <style>
-    
+
 .submit {
     margin: auto;
     animation-delay: 1.1s;
