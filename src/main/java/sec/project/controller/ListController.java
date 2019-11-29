@@ -19,7 +19,6 @@ public class ListController {
         model.addAttribute("subscribers", signupRepository.findAll());
         return "list";
     }
-
     @RequestMapping(value = "/list/{subscriberId}", method = RequestMethod.GET)
     public String subscriberMapping(Model model, @PathVariable String subscriberId) {
         model.addAttribute("subscriber", signupRepository.findWithSubscriberId(subscriberId));
