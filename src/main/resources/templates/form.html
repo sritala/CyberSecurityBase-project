@@ -6,6 +6,7 @@
 </head>
 <body>
   <h1>FoodBox</h1>
+  
   <h2>Join our monthly subscription box and recieve locally made products every month </h2>
   <div class="info">
 
@@ -17,13 +18,6 @@
           name="creditCardNumber" id="creditCardNumber" /></p>
       <p><input class="submit" type="submit" value="Submit" /></p>
     </form>
-
-    <form action="#" th:action="@{/form}" method="POST">
-      <h3>or sign in</h3>
-      <p><label class="username" for="username">Username</label>: <input type="text" name="username" id="username"/></p>
-      <p><label class="password" for="password">Password</label>: <input type="password" name="password" id="password"/></p>
-      <p><input class="submit" type="submit" value="Submit" /></p>
-  </form>
   </div>
   <p></p>
   <a href="/list" style="visibility: hidden">List all subscribers</a>
