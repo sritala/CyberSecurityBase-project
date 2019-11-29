@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Cyber Security Base – Course Project I
 You can find the project files from here: https://github.com/nicohartto/cybersecuritybase-project and clone the project to your own local machine. This project uses Starter Code provided. Simply run the spring-boot application, and open http://localhost:8080 to review following issues.
 
@@ -96,3 +97,6 @@ NOTE: You might need to configure ports depending on your own OWASP ZAP proxy se
 6.	Implement HTTPS as layer of security when handling credit-card number information
 7.	Remove unsecure way of handling listing of single subscriber (nativeQuery = true) and use spring-boot supplied JPA repository and safer methods supplied by default such as .findOne()
 # CyberSecurityBase19
+=======
+# CyberSecurityBase19
+>>>>>>> 7d8e27df61e401b8c319599147f166581197bc1f
