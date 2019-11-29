@@ -21,6 +21,7 @@ public class Signup extends AbstractPersistable<Long> {
         this.address = address;
         this.email = email;
         this.creditCardNumber = creditCardNumber;
+
     }
 
     public String getName() {

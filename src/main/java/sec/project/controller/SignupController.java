@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import sec.project.domain.Signup;
 import sec.project.repository.SignupRepository;
+import java.sql.SQLException;
 
 @Controller
 public class SignupController {
@@ -25,14 +26,11 @@ public class SignupController {
     }
 
     @RequestMapping(value = "/form", method = RequestMethod.POST)
-    public String submitForm(@RequestParam String name, @RequestParam String address, @RequestParam String email, @RequestParam String creditCardNumber) {
+    public String submitForm(@RequestParam String name, @RequestParam String address, @RequestParam String email, @RequestParam String creditCardNumber
+    ) {
         signupRepository.save(new Signup(name, address, email, creditCardNumber));
         return "done";
     }
-
-    
-
-
 
 
 }

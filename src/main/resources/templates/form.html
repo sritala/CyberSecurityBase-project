@@ -8,6 +8,7 @@
   <h1>FoodBox</h1>
   <h2>Join our monthly subscription box and recieve locally made products every month </h2>
   <div class="info">
+
     <form action="#" th:action="@{/form}" method="POST">
       <p><label class="name" for="name">Name</label>: <input type="text" name="name" id="name" /></p>
       <p><label class="address" for="address">Address</label>: <input type="text" name="address" id="address" /></p>
@@ -16,6 +17,13 @@
           name="creditCardNumber" id="creditCardNumber" /></p>
       <p><input class="submit" type="submit" value="Submit" /></p>
     </form>
+
+    <form action="#" th:action="@{/form}" method="POST">
+      <h3>or sign in</h3>
+      <p><label class="username" for="username">Username</label>: <input type="text" name="username" id="username"/></p>
+      <p><label class="password" for="password">Password</label>: <input type="password" name="password" id="password"/></p>
+      <p><input class="submit" type="submit" value="Submit" /></p>
+  </form>
   </div>
   <p></p>
   <a href="/list" style="visibility: hidden">List all subscribers</a>
@@ -53,6 +61,17 @@
     margin-top: 50px;
     white-space: nowrap
   }
+  h3 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3e7245;
+    font-weight: 200;
+    width: 5px;
+    margin-left: 50%;
+    margin-top: -5px;
+    white-space: nowrap
+  }
+
 
   .info {
     align-items: center;
@@ -109,7 +128,22 @@
     margin-left: 5%;
     width: 70px;
     font-family: Arial, Helvetica, sans-serif;
-
   }
+
+  .username {
+    color: #1a361e;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -28px;
+  }
+  .password {
+    color: #1a361e;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -25px;
+  }
+
+
+
 </style>
 </html>
