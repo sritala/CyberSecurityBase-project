@@ -8,9 +8,9 @@ Task: Visitors can get access for information about subscribers by modifying the
 
 ### Instructions:
 1. Run the program in browser locally (http://localhost:8080/). 
-2. Create some subscribers in form page. 
+2. Create some subscribers in the form page. 
 3. Log in by using the username "admin" and the password "admin". 
-4. After you have successfully logged in, you're transfered to admin site. 
+4. After you have successfully logged in, you're transfered into admin site. 
 5. Click the subscribers list and you see all of your previously made subscribers. 
 6. Now go back to the form page (http://localhost:8080/). As you can see the program has logged you off. 
 7. Modify the url and go to (http://localhost:8080/list). You can access all the subscriber information even though you're not logged in. This has high vulnerability for attackers to see all of the subscriber informations including credit card numbers. 
@@ -61,7 +61,8 @@ You can fix that issue by adding that previous code in the SecurityConfiguration
 
 
 ### Instructions:
-1. Open the pom.xml file. Notice that the program has outdated version of Spring Framework (1.4.2). 
+1. Open the pom.xml file. 
+2. Notice that the program has outdated version of Spring Framework (1.4.2). 
 
 <version>1.4.2.RELEASE</version>
 
