@@ -62,9 +62,7 @@ You can fix that issue by adding that previous code in the SecurityConfiguration
 
 ### Instructions:
 1. Open the pom.xml file. 
-2. Notice that the program has outdated version of Spring Framework (1.4.2). 
-
-<version>1.4.2.RELEASE</version>
+2. Notice that the program has outdated version of Spring Framework (1.4.2) in <version>1.4.2.RELEASE</version>
 
 ### How to avoid:
 You can fix the issue by modifying the 1.4.2 RELEASE to the newest update. 
