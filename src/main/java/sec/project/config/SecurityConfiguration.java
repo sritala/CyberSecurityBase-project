@@ -19,19 +19,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private UserDetailsService userDetailsService;
 
     @Override
+    //Disabled cross-Site Request Forgery (CSRF)
     protected void configure(HttpSecurity http) throws Exception {
-        // no real security at the moment
+        http.csrf().disable();
         http.authorizeRequests()
                 .anyRequest().permitAll();
     }
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
-    }
-
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
 }

@@ -6,6 +6,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 @Entity
 public class Signup extends AbstractPersistable<Long> {
 
+    private static final long serialVersionUID = 1L;
     private String name;
     private String address;
     private String email;
@@ -21,9 +22,8 @@ public class Signup extends AbstractPersistable<Long> {
         this.address = address;
         this.email = email;
         this.creditCardNumber = creditCardNumber;
-
     }
-
+    
     public String getName() {
         return name;
     }

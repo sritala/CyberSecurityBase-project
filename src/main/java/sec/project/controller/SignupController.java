@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import sec.project.domain.Signup;
 import sec.project.repository.SignupRepository;
 
-
 @Controller
 public class SignupController {
 

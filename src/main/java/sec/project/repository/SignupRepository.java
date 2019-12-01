@@ -10,6 +10,7 @@ import javax.persistence.Table;
 public interface SignupRepository extends JpaRepository<Signup, Long> {
 
     @Query(value = "Select * from Signup where id = ?1", nativeQuery = true)
+    
     Signup findWithSubscriberId(String subscriberId);
 }
 
